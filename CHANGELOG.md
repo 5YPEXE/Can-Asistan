@@ -2,7 +2,7 @@
 
 Tüm önemli değişiklikler bu dosyada kayıt altına alınacaktır.
 
-## [1.0.0] - 2024-05-21 (Kararlı v1 Sürümü)
+## [1.0.0] (Kararlı v1 Sürümü)
 
 ### ✨ Eklendi
 - **Merkezi Ses Yönetimi:** `BackgroundService` içine entegre edilmiş singleton TTS yapısı.
