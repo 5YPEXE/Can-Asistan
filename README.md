@@ -28,10 +28,7 @@ Can Asistan, Android cihazlar için geliştirilmiş, sesli komutlarla mesaj gön
 
 ## 🚀 Kurulum ve Çalıştırma
 
-1. Projeyi Android Studio'da açın.
-2. Gerekli izinleri (Rehber, SMS, Mikrofon, Telefon) onaylayın.
-3. Ayarlar sayfasından "Arka Planda Çalış" özelliğini aktif edin.
-4. Ekrana dokunarak veya arka planda asistanı kullanmaya başlayın.
+## GÜNCELLENECEK
 
 ## 📝 Değişim Günlüğü (Changelog)
 
