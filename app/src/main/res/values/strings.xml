@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Can Asistan</string>
+    <string name="btn_listen">KONUŞMAK İÇİN DOKUN</string>
+    <string name="status_ready">Can Asistan Hazır</string>
+    <string name="status_speaking">Can Asistan Konuşuyor...</string>
+    <string name="status_listening">Can Asistan Dinliyor...</string>
+</resources>
