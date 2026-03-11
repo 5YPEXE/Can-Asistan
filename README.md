@@ -1,6 +1,6 @@
-# Can-Asistan 🎙️📱
+# Can Asistan 🎙️📱
 
-**Can-Asistan**, görme engelli ve kısmi görme engelli kullanıcılar için geliştirilen, Türkçe sesli komutlarla çalışan erişilebilir bir Android yardımcı uygulamasıdır.
+**Can Asistan**, görme engelli ve kısmi görme engelli kullanıcılar için geliştirilen, Türkçe sesli komutlarla çalışan erişilebilir bir Android yardımcı uygulamasıdır.
 
 ---
 
