@@ -1,9 +1,6 @@
 # Can-Asistan 🎙️📱
 
-**Can-Asistan**, Android cihazlar için geliştirilmiş, Türkçe sesli komutlarla çalışan akıllı bir yardımcı uygulamadır.  
-Sesli komutlarla arama yapabilir, mesaj gönderebilir, gelen mesajları okuyabilir ve temel cihaz bilgilerini kullanıcıya sesli olarak iletebilir.
-
-Özellikle **erişilebilirlik odaklı yapısı** ve **arka planda çalışabilme desteği** sayesinde daha pratik ve eller serbest bir kullanım deneyimi sunmayı amaçlar.
+**Can-Asistan**, görme engelli ve kısmi görme engelli kullanıcılar için geliştirilen, Türkçe sesli komutlarla çalışan erişilebilir bir Android yardımcı uygulamasıdır.
 
 ---
 
