@@ -29,11 +29,7 @@ import androidx.core.net.toUri
 import java.text.SimpleDateFormat
 import java.util.*
 
-/**
- * Can Asistan - Sesli Komut ve Yardımcı Uygulaması
- * Bu sınıf asistanın ana mantığını, ses tanıma ve TTS akışını yönetir.
- * Refactored for stability, better parsing, and production-like quality.
- */
+
 sealed class AppState {
     object Idle : AppState()
     object WaitingSmsRecipient : AppState()
