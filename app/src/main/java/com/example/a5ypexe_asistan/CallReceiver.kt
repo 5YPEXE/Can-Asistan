@@ -15,7 +15,7 @@ class CallReceiver : BroadcastReceiver() {
             val state = intent.getStringExtra(TelephonyManager.EXTRA_STATE)
             
             if (state == TelephonyManager.EXTRA_STATE_RINGING) {
-                // Not: Android 10+ cihazlarda numara almak için READ_CALL_LOG izni gerekir.
+                // Android 10+ cihazlarda numara almak için READ_CALL_LOG izni gerekli
                 val incomingNumber = intent.getStringExtra(TelephonyManager.EXTRA_INCOMING_NUMBER)
                 
                 val prefs = context.getSharedPreferences("CanAsistanPrefs", Context.MODE_PRIVATE)
@@ -25,7 +25,6 @@ class CallReceiver : BroadcastReceiver() {
                     val callerName = findCallerName(context, incomingNumber)
                     val announcement = "Arama geliyor: ${Utils.metniInsanlastir(callerName)}"
                     
-                    // Merkezi servis üzerinden duyuruyu yap
                     BackgroundService.getInstance()?.speak(announcement)
                     Log.d("CallReceiver", "Arama duyuruluyor: $callerName")
                 }
