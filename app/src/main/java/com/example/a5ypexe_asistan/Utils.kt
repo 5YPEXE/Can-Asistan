@@ -9,7 +9,6 @@ object Utils {
         var sonuc = metin
         if (metin.equals("TEB", ignoreCase = true)) return "Türk Ekonomi Bankası"
         
-        // Eğer sadece rakam ve sembollerden oluşuyorsa (Telefon numarası ise)
         if (metin.matches(Regex("[0-9+\\s()-]+"))) {
             return formatlaTurkUsulu(metin)
         }
@@ -17,11 +16,9 @@ object Utils {
         sonuc = sonuc.lowercase(turkishLocale).replaceFirstChar { it.uppercase() }
         sonuc = sonuc.replace("teb", "Teb", ignoreCase = true).replace("iban", "İban", ignoreCase = true)
         
-        // Telefon numaralarını tespit et ve formatla
         val telRegex = Regex("(05|5)\\d{9}")
         sonuc = telRegex.replace(sonuc) { formatlaTurkUsulu(it.value) }
         
-        // Kodları (OTP vb.) rakam rakam okutmak için
         val kodRegex = Regex("\\d{3,6}")
         sonuc = kodRegex.replace(sonuc) { it.value.chunked(1).joinToString(", ") }
         
