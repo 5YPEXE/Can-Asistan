@@ -22,7 +22,6 @@ class SmsNotificationListener : NotificationListenerService() {
 
     fun okunduOlarakIsaretle() {
         try {
-            // Telefondaki tüm aktif bildirimleri al
             val activeNotifications = getActiveNotifications()
             if (activeNotifications.isNullOrEmpty()) {
                 Log.d("AsistanBildirim", "Aktif bildirim bulunamadı.")
@@ -31,16 +30,14 @@ class SmsNotificationListener : NotificationListenerService() {
 
             for (sbn in activeNotifications) {
                 val pkg = sbn.packageName.lowercase()
-                // Sadece mesajlaşma uygulamalarını hedef al (Google Mesajlar, Samsung Mesajlar vb.)
                 if (pkg.contains("messaging") || pkg.contains("sms") || pkg.contains("mms") || pkg.contains("telephony")) {
                     val actions = sbn.notification.actions ?: continue
                     for (action in actions) {
                         val title = action.title.toString().lowercase()
-                        // Türkçe ve İngilizce yaygın buton isimlerini ara
                         if (title.contains("okun") || title.contains("read") || 
                             title.contains("görül") || title.contains("done")) {
                             
-                            action.actionIntent.send() // Butona tıkla!
+                            action.actionIntent.send() 
                             Log.d("AsistanBildirim", "${sbn.packageName} için Okundu butonuna basıldı.")
                         }
                     }
