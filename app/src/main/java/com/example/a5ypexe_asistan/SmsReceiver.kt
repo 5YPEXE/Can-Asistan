@@ -21,7 +21,6 @@ class SmsReceiver : BroadcastReceiver() {
 
                 if (isEnabled) {
                     val announcement = "${Utils.metniInsanlastir(sender)} kişisinden yeni mesaj var. Mesaj şöyle: ${Utils.metniInsanlastir(body)}"
-                    // Merkezi servis üzerinden duyuruyu yap
                     BackgroundService.getInstance()?.speak(announcement)
                     Log.d("SmsReceiver", "Mesaj duyuruluyor: $sender")
                 }
